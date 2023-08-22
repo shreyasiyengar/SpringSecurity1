@@ -29,4 +29,9 @@ public class NoticeController {
             return null;
         }
     }
+
+//    @GetMapping("/notices")
+//    public String getNotice(){
+//        return "this is notice page";
+//    }
 }

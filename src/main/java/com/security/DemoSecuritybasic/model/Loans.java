@@ -99,4 +99,18 @@ public class Loans {
     public void setCreateDt(String createDt) {
         this.createDt = createDt;
     }
+
+    @Override
+    public String toString() {
+        return "Loans{" +
+                "loanNumber=" + loanNumber +
+                ", customerId=" + customerId +
+                ", startDt=" + startDt +
+                ", loanType='" + loanType + '\'' +
+                ", totalLoan=" + totalLoan +
+                ", amountPaid=" + amountPaid +
+                ", outstandingAmount=" + outstandingAmount +
+                ", createDt='" + createDt + '\'' +
+                '}';
+    }
 }

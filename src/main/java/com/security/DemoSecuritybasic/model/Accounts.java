@@ -7,15 +7,18 @@ import jakarta.persistence.Id;
 @Entity
 public class Accounts {
 
-    @Column(name ="customer_id")
+    @Column(name = "customer_id")
     private int customerId;
 
     @Id
     @Column(name = "account_number")
-    private long accountName;
+    private long accountNumber;
 
     @Column(name="account_type")
-    private String accoutntype;
+    private String accountType;
+
+    @Column(name = "branch_address")
+    private String branchAddress;
 
     @Column(name="create_dt")
     private String createDt;
@@ -28,20 +31,20 @@ public class Accounts {
         this.customerId = customerId;
     }
 
-    public long getAccountName() {
-        return accountName;
+    public long getAccountNumber() {
+        return accountNumber;
     }
 
-    public void setAccountName(long accountName) {
-        this.accountName = accountName;
+    public void setAccountNumber(long accountNumber) {
+        this.accountNumber = accountNumber;
     }
 
-    public String getAccoutntype() {
-        return accoutntype;
+    public String getAccountType() {
+        return accountType;
     }
 
-    public void setAccoutntype(String accoutntype) {
-        this.accoutntype = accoutntype;
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
     }
 
     public String getCreateDt() {
@@ -50,5 +53,13 @@ public class Accounts {
 
     public void setCreateDt(String createDt) {
         this.createDt = createDt;
+    }
+
+    public String getBranchAddress() {
+        return branchAddress;
+    }
+
+    public void setBranchAddress(String branchAddress) {
+        this.branchAddress = branchAddress;
     }
 }

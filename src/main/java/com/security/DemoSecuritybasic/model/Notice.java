@@ -17,7 +17,7 @@ public class Notice {
     @Column(name="notice_summary")
     private String noticeSummary;
 
-    @Column(name="notice_deatils")
+    @Column(name="notice_details")
     private String noticeDetails;
 
     @Column(name = "notic_beg_dt")

@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table(name="account_transctions")
+@Table(name="account_transactions")
 public class AccountTransactions {
 
     @Id
@@ -22,7 +22,7 @@ public class AccountTransactions {
     @Column(name="customer_id")
     private int customerId;
 
-    @Column(name="transactoon_dt")
+    @Column(name="transaction_dt")
     private Date transactionDt;
 
     @Column(name="transaction_summary")
@@ -34,7 +34,7 @@ public class AccountTransactions {
     @Column(name="transaction_amt")
     private int transactionAmt;
 
-    @Column(name = "closing_balanace")
+    @Column(name = "closing_balance")
     private int closingBalance;
 
     @Column(name="create_dt")
